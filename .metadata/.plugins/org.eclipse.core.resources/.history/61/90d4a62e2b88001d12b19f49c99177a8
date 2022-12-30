@@ -1,0 +1,16 @@
+package com.seleco.main;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class UsingArrayList {
+public static void main(String[] args) {
+	List<String> list=new ArrayList<>();
+	list.add("Seleco");
+	list.add("Sisiliya");
+	list.add("Sebestin");
+	list.add("Almeda");
+	
+	
+}
+}

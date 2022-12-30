@@ -1,0 +1,8 @@
+package com.randomTeamGenerator.controller;
+
+import com.randomTeamGenerator.model.TeamNames;
+
+public class RandomMatchTeams {
+TeamNames tn=new TeamNames();
+
+}

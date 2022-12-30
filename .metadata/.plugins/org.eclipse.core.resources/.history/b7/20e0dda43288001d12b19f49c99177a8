@@ -1,0 +1,15 @@
+package com.randomTeamGenerator.model;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class TeamNames {
+	static List<String> teamNames=new ArrayList<>();
+	
+	public void addTeams(String name) {
+	
+		teamNames.add(name);
+
+	}
+
+}

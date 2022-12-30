@@ -1,0 +1,12 @@
+package com.randomTeamGenerator.controller;
+
+import java.util.List;
+
+public class RandomMatchTeams {
+List<String> controllerList;
+
+public void getListFromModel(List<String> list) {
+	this.controllerList=list;
+}
+
+}

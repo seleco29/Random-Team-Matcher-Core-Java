@@ -1,0 +1,18 @@
+package com.randomTeamGenerator.view;
+
+import com.randomTeamGenerator.model.TeamNames;
+
+public class App {
+	public static void main(String[] args) {
+		TeamNames tn = new TeamNames();
+		tn.addTeams("team1");
+		tn.addTeams("Team2");
+		tn.addTeams("team3");
+		tn.addTeams("team4");
+		tn.addTeams("team5");
+//		tn.addTeams("team6");
+
+		System.out.println(tn.viewTeamNames());
+		tn.sendList();
+	}
+}

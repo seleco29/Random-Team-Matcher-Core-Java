@@ -1,0 +1,32 @@
+package com.seleco.main;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+
+public class UsingArrayList {
+	public static void main(String[] args) {
+		List<String> list = new ArrayList<>();
+		list.add("test1");
+		list.add("test2");
+		list.add("test3");
+		list.add("test4");
+		list.add("test5");
+		list.add("test6");
+		list.add("test7");
+		list.add("test8");
+		System.out.println(list);
+		List<String> newList = new ArrayList<>();
+		Random random = new Random();
+		while (list.size()!= 0) {
+			int randomValue = random.nextInt(list.size());
+			newList.add(list.get(randomValue));
+			list.remove(list.get(randomValue));
+		}
+		System.out.println("***********************");
+		System.out.println(newList);
+		System.out.println("***********************");
+		System.out.println(list);
+	}
+	
+}

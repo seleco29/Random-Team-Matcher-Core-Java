@@ -11,8 +11,12 @@ public class App {
 		teamNames.addTeams("team4");
 		teamNames.addTeams("team5");
 		teamNames.addTeams("team6");
+		teamNames.addTeams("team7");
+		teamNames.addTeams("team8");
+		teamNames.addTeams("team9");
 
 		System.out.println("Original team list "+teamNames.viewTeamNames());
+		
 		teamNames.sendList();
 	}
 }

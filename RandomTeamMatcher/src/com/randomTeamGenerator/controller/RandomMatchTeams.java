@@ -17,17 +17,31 @@ public class RandomMatchTeams {
 			list.remove(controllerList.get(randomValue));
 		}
 		System.out.println("***********************");
-		System.out.println("Random team list "+newList);
+		System.out.println("Random team list " + newList);
 		System.out.println("***********************");
+
 		displayMatch(newList);
+
 	}
-	
+
 	public static void displayMatch(List<String> list) {
-		
-		for(int i=0;i<list.size();i=i+2) {
-	
-			System.out.println(list.get(i)+" Vs "+list.get(i+1));
-		
+
+		if (list.size() % 2 == 0) {
+			for (int i = 0; i < list.size(); i = i + 2) {
+				System.out.println(list.get(i) + " Vs " + list.get(i + 1));
+			}
+		} else {
+			int j = 0;
+			for (int i = 0; i < list.size(); i = j) {
+				if (j < list.size() - 1) {
+					j = j + 2;
+					System.out.println(list.get(i) + " Vs " + list.get(i + 1));
+				} else {
+					System.out.println(list.get(i) + " gets walk over");
+					break;
+				}
+
+			}
 		}
 	}
 
